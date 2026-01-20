@@ -17,11 +17,9 @@
             border: 4px solid #3f2a1d;
         }
 
-        /* Header */
+        /* Header (CHANGED COLOR) */
         .header {
-            background-image: url("https://images.unsplash.com/photo-1501004318641-b39e6451bec6");
-            background-size: cover;
-            background-position: center;
+            background-color: #14532d; /* dark green */
             color: #ffffff;
             padding: 50px 25px;
         }
