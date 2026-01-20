@@ -2,37 +2,47 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Agriculture and Food Security</title>
+    <title>Digital Business</title>
 
     <style>
         body {
-            background-color: #2a1f14;
-            font-family: "Trebuchet MS", Arial, sans-serif;
+            background-color: #1f2937;
+            font-family: "Segoe UI", Arial, sans-serif;
         }
 
         .container {
             width: 900px;
-            margin: 25px auto;
-            background-color: #fffaf0;
-            border: 4px solid #3f2a1d;
+            margin: 30px auto;
+            background-color: #f9fafb;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.3);
         }
 
-        /* Header (CHANGED COLOR) */
+        /* Header: left-aligned, small text, with short sentence */
         .header {
-            background-color: #14532d; /* dark green */
+            background-image:
+                linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
+                url("https://images.unsplash.com/photo-1556761175-5973dc0f32e7");
+            background-size: cover;
+            background-position: center;
             color: #ffffff;
-            padding: 50px 25px;
+            padding: 50px 50px;
+            text-align: left;
         }
 
         .header h1 {
             margin: 0;
-            font-size: 36px;
+            font-size: 32px;
+            letter-spacing: 2px;
+            font-weight: 700;
         }
 
         .header p {
-            margin-top: 6px;
-            letter-spacing: 2px;
-            font-size: 14px;
+            margin-top: 10px;
+            font-size: 16px;
+            letter-spacing: 1px;
+            opacity: 0.9;
         }
 
         /* Content layout */
@@ -42,50 +52,71 @@
 
         .main-content {
             width: 65%;
-            padding: 22px;
+            padding: 25px;
         }
 
         .main-content h2 {
-            color: #8b4513;
+            color: #1d4ed8;
         }
 
         .main-content p {
             text-align: justify;
-            line-height: 1.7;
-            color: #2f1b0c;
+            line-height: 1.8;
+            color: #111827;
         }
 
         /* Sidebar */
         .sidebar {
             width: 35%;
-            background-color: #f3d9b1;
-            padding: 22px;
+            background-color: #e0e7ff;
+            padding: 25px;
         }
 
         .sidebar h3 {
-            background-color: #a16207;
+            background-color: #3730a3;
             color: white;
-            padding: 10px;
+            padding: 12px;
             margin-top: 0;
+            border-radius: 5px;
         }
 
         .sidebar ul {
             padding-left: 20px;
-            list-style-type: disc;
+            list-style-type: square;
         }
 
         .sidebar li {
             margin-bottom: 10px;
-            color: #5a3412;
+            color: #1e3a8a;
         }
 
         /* Footer */
         .footer {
-            background-color: #a16207;
+            background-color: #3730a3;
             color: white;
             text-align: center;
-            padding: 14px;
+            padding: 16px;
             font-size: 14px;
+        }
+
+        /* Responsive for smaller screens */
+        @media (max-width: 900px) {
+            .content {
+                flex-direction: column;
+            }
+
+            .main-content, .sidebar {
+                width: 100%;
+            }
+
+            .header h1 {
+                font-size: 28px;
+                text-align: center;
+            }
+
+            .header p {
+                text-align: center;
+            }
         }
     </style>
 </head>
@@ -94,68 +125,74 @@
 
 <div class="container">
 
+    <!-- Header: Left-aligned, small title, short sentence -->
     <div class="header">
-        <h1>AGRICULTURE</h1>
-        <p>FOOD SECURITY & RURAL DEVELOPMENT</p>
+        <h1>DIGITAL BUSINESS</h1>
+        <p>Empowering modern businesses</p>
     </div>
 
+    <!-- Main content and sidebar -->
     <div class="content">
 
+        <!-- Main Content -->
         <div class="main-content">
-            <h2>Agriculture</h2>
+            <h2>Digital Marketing</h2>
             <p>
-                Agriculture is the practice of cultivating crops and rearing animals for food,
-                raw materials, and other essential products. It is one of the oldest economic
-                activities and remains a major source of employment and income for many people,
-                especially in developing countries.
+                Digital marketing refers to the promotion of products and services using digital
+                technologies such as the internet, social media, search engines, and email.
+                Businesses use digital marketing to reach a wider audience, build brand awareness,
+                and engage customers in real time. Common strategies include social media marketing,
+                search engine optimization, and online advertising.
             </p>
 
-            <h2>Food Security</h2>
+            <h2>E-Commerce</h2>
             <p>
-                Food security exists when all people have physical and economic access to
-                sufficient, safe, and nutritious food to meet their dietary needs. Achieving
-                food security requires sustainable farming practices, efficient food storage,
-                and proper distribution systems.
+                E-commerce involves buying and selling goods and services through electronic
+                platforms such as websites and mobile applications. It allows businesses to
+                operate beyond physical locations and serve customers globally. E-commerce
+                improves convenience, reduces operational costs, and supports modern business growth.
             </p>
 
-            <h2>Modern Farming</h2>
+            <h2>Online Entrepreneurship</h2>
             <p>
-                Modern farming involves the use of improved tools, machinery, fertilizers, and
-                technology to increase agricultural productivity. Techniques such as irrigation,
-                mechanization, and agricultural extension services help farmers improve yields
-                and reduce losses.
+                Online entrepreneurship focuses on creating and managing businesses that operate
+                mainly on digital platforms. Examples include online stores, digital services,
+                and content creation. Successful online entrepreneurs rely on innovation,
+                technology, and effective digital strategies to compete in the global market.
             </p>
         </div>
 
+        <!-- Sidebar -->
         <div class="sidebar">
             <h3>Key Areas</h3>
 
-            <strong>Crop Farming</strong>
+            <strong>Marketing Tools</strong>
             <ul>
-                <li>Cereals</li>
-                <li>Legumes</li>
-                <li>Vegetables</li>
+                <li>Social Media Platforms</li>
+                <li>Email Marketing</li>
+                <li>Search Engine Optimization</li>
             </ul>
 
-            <strong>Animal Production</strong>
+            <strong>E-Commerce Models</strong>
             <ul>
-                <li>Poultry</li>
-                <li>Livestock</li>
-                <li>Aquaculture</li>
+                <li>Business to Consumer (B2C)</li>
+                <li>Business to Business (B2B)</li>
+                <li>Online Marketplaces</li>
             </ul>
 
-            <strong>Support Services</strong>
+            <strong>Skills Needed</strong>
             <ul>
-                <li>Extension Services</li>
-                <li>Farm Mechanization</li>
-                <li>Market Access</li>
+                <li>Digital Literacy</li>
+                <li>Content Creation</li>
+                <li>Financial Management</li>
             </ul>
         </div>
 
     </div>
 
+    <!-- Footer -->
     <div class="footer">
-        © 2026 Agriculture & Food Security Page
+        © Copyright 2026 Digital Business Page
     </div>
 
 </div>
